@@ -4,22 +4,30 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Article></Article>
     </div>
   );
+}
+
+function Article() {
+  return (
+    <div>
+      <article className="blog">
+        <h2>React 6 core concepts</h2>
+        <div>
+          <p>REACT is a library for building user interfaces.It has 6 core concepts that every web developer should know. These are as follows:</p>
+          <ul>
+            <li>JSX</li>
+            <li>Components</li>
+            <li>Props</li>
+            <li>State</li>
+            <li>Events (Event listener)</li>
+            <li>Effect (Load external data)</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  )
 }
 
 export default App;
